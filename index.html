@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div style="text-align: center">
+            <a href="" class="play">PLAY</a>
+        </div>
+
+        <div class="text-wrap">
+            <div class="text text1" data-0="opacity: 1;" data-500="opacity: 1;"  data-1000="opacity: 0;">Tak jsem Pepku slyšel, že máš dneska narozeniny</div>
+            <div class="text text2" data-1000="opacity: 0;" data-1500="opacity: 1;"  data-2000="opacity: 0;">Dej si špenát</div>
+            <div class="text text3" data-2000="opacity: 0;" data-2500="opacity: 1;"  data-3000="opacity: 0;">A upaluj na pivko</div>
+            <div class="text text4" data-3000="opacity: 0;" data-3500="opacity: 1;"  data-4000="opacity: 0;">A hlavně aby sis Pospíšil!</div>
+            <div class="text text5" data-4000="opacity: 0;" data-4500="opacity: 1;">Všechno nejlepší přeje <a href="https://twitter.com/retrorubies">@retrorubies</a> a <a href="https://twitter.com/pajasevi">@pajasevi</a></div>
+        </div>
+
+        <div class="img-wrap">
+            <div class="img img1" data-0="opacity: 1;" data-500="opacity: 1;"  data-1000="opacity: 0;"></div>
+            <div class="img img2" data-1000="opacity: 0;" data-1500="opacity: 1;"  data-2000="opacity: 0;"></div>
+            <div class="img img3" data-2000="opacity: 0;" data-2500="opacity: 1;"  data-3000="opacity: 0;"></div>
+            <div class="img img4" data-3000="opacity: 0;" data-3500="opacity: 1;"  data-4000="opacity: 0;"></div>
+            <div class="img img5" data-4000="opacity: 0;" data-4500="opacity: 1;"></div>
+        </div>
+
+
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+
+        <script src="js/vendor/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init({
+                smoothScrolling: true
+            });
+
+            $(".play").click(function(){
+                $("html, body").animate({ scrollTop: $(document).height() }, 20000);
+                return false;
+            });
+        </script>
+    </body>
+</html>
